@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 15px;
+  color: #333;
+  background: #f4f4f4;
+}
+
+h1,
+h2 {
+  color: #007bff;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin-bottom: 5px;
+  font-size: 2.2rem;
+}
+
+.header-nav a.active {
+  background: #007bff;
+  color: white;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.header-nav a {
+  text-align: center;
+  padding: 12px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.header-nav a:hover {
+  background: #007bff;
+  color: white;
+}
+
+.about-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.me-text h2 {
+  margin-top: 0;
+}
+
+.me-text p {
+  font-size: 1rem;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fafafa;
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px black;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills span {
+  background: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  max-width: 90%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-nav a {
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 30px;
+  }
+
+  .about-container {
+    margin: auto;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header-nav {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .header-nav a {
+    width: auto;
+    padding: 10px 18px;
+  }
+
+  .me {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
